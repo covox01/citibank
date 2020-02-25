@@ -1,0 +1,241 @@
+body {
+  margin: 0px;
+}
+
+p, span, div {
+  font-family: "interstate", Arial, Helvetica, sans-serif;
+  font-weight: light;
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+}
+
+.bannerSize {
+  overflow: hidden;
+  width: 300px;
+  height: 250px;
+}
+
+#viewport {
+  overflow: hidden;
+  background-color: #ffffff;
+  position: relative;
+  margin: 0 auto;
+}
+
+#border {
+  overflow: hidden;
+  position: absolute;
+  pointer-events: none;
+  left: 0px;
+  top: 0px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 1px solid #999999;
+}
+
+#clickable {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: white;
+  opacity: 0;
+  border: 1px solid red;
+}
+
+#background {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background: #ffffff no-repeat;
+}
+
+#white {
+  background: #ffffff;
+}
+
+/* ---- banner content ---- */
+
+#liveLegal_container {
+  position: absolute;
+  width: 235px;
+  top: 3px;
+  left: 4px;
+}
+
+#legal {
+  position: absolute;
+  font-size: 8.5px;
+  top: 0px;
+  left: 0;
+  color: #757575;
+}
+
+#cover {
+  background: no-repeat url(../images/cover.png);
+  position: absolute;
+  width: 88px;
+  height: 16px;
+  top: 6px;
+  left: 3px;
+  background-size: cover;
+}
+
+#liveText1_container {
+  position: absolute;
+  width: 139px;
+  height: 50px;
+  top: 59px;
+  left: 125px;
+}
+
+#liveText1 {
+  position: absolute;
+  font-size: 14.7px;
+  top: 0px;
+  left: 0;
+  color: #002a54;
+}
+
+#liveText2_container {
+  position: absolute;
+  width: 160px;
+  height: 50px;
+  top: 105px;
+  left: 125px;
+}
+
+#liveText2 {
+  position: absolute;
+  font-size: 16px;
+  top: 0px;
+  left: 0;
+  color: #002a54;
+}
+
+span.trademark {
+  position: absolute;
+  top: 20px;
+  left: 103px;
+  font-size: 8.5px;
+}
+
+#liveText2 p:last-child {
+  position: absolute;
+  top: 19px;
+  left: 113px;
+}
+
+#phone_container {
+	position: absolute;
+	overflow: hidden;
+	width: 187px;
+	height: 376px;
+	top: 14px;
+	left: 24.5px;
+}
+
+#phone {
+	background: no-repeat url("../images/phone.png");
+	position: absolute;
+	overflow: hidden;
+	width: 187px;
+	height: 376px;
+	top: 0;
+	left: 0;
+	background-size: cover;
+}
+
+#phone_ui {
+	background: no-repeat url("../images/phone_ui.png");
+	position: absolute;
+	overflow: hidden;
+	width: 165px;
+	height: 375px;
+	top: 7px;
+	left: -2px;
+	right: 10px;
+	background-size: cover;
+}
+
+#phone_ui_container {
+	position: absolute;
+	overflow: hidden;
+	width: 160px;
+	height: 308px;
+	top: 45px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	background-size: cover;
+}
+
+#gradient {
+	background: no-repeat url("../images/gradient.png");
+	position: absolute;
+	overflow: hidden;
+	width: 187px;
+	height: 376px;
+	top: 0;
+	left: 0;
+	background-size: cover;
+}
+
+.svg_clip {
+	clip-path: url(#phone_ui_clip);
+  position: absolute;
+  left: 100px;
+}
+
+#phone_ui_clip {
+  position: absolute;
+}
+
+#cta_container {
+  overflow: hidden;
+  background: #002a53;
+  border-radius: 5px;
+  position: absolute;
+  top: 99px;
+  left: 116px;
+  width: 85.5px;
+  height: 23px;
+  left: 125px;
+  top: 156px;
+}
+
+#cta {
+  margin: 4.5px auto;
+  text-align: center;
+  font-size: 10px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+#sheen {
+	position: absolute;
+	background: no-repeat url("../images/sheen.png");
+	width: 20px;
+  height: 40px;
+  transform: rotate(20deg);
+	top: -10px;
+  left: 0px;
+  opacity: .5;
+  background-color: white;
+}
+
+#logo {
+  background: url(../images/logo.png) no-repeat;
+  background-size: contain;
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  top: 0;
+  left: 0;
+}

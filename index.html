@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="ad.size" content="width=300,height=250">
+   <title>300x250_Advertisement_Citi_MobileAppLumi</title>
+   <script type="text/javascript">var clickTag = "http://www.google.com";</script>
+   <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenmax_1.18.5_23b0de6da0ee295131e32a500470610c_min.js"></script>
+   <!-- Image Loader -->
+   <script src="js/imagesloaded.pkgd.min.js"></script>
+   <link rel="stylesheet" href="https://use.typekit.net/lgp1lfv.css">
+   <link href="css/style.css" rel="stylesheet" media="all" >
+   <script src="js/main.js"></script>
+   <!-- UN-COMMENT BELOW LINE ONE YOU ARE READY TO TRAFFIC -->
+   <!-- <script src="https://s0.2mdn.net/ads/studio/Enabler.js"></script> -->
+</head>
+
+<body>
+   <div class="bannerSize" id="viewport">
+      <noscript><img src="backup.jpg" alt="Offer from Citi. A mobile device displays the balances of multiple Citi accounts. View your accounts in one place. Customer must provide online access for linked accounts. Explore what’s new in the Citi Mobile App. Learn more." /></noscript>
+      <div class="bannerSize" id="background"></div>
+      <div id="logo" alt="Citibank logo"></div>
+      <div id="cta_container">
+         <p id="cta">Learn More ></p>
+         <div id="sheen"></div>
+      </div>
+      
+<!-- ----- Phone -----   -->
+
+      <div id="phone_container" alt="A mobile device displays the balances of multiple Citi accounts.">
+         <div id="phone"></div>
+         <div id="phone_ui_container" class="svg_clip">
+            <div id="phone_ui"></div>
+            <div id="cover"></div>
+         </div>
+         <div id="gradient"></div>
+      </div>
+
+<!-- ----- Phone UI SVG Clip Path ----- -->
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160.82 315.43">
+         <defs>
+            <clipPath id="phone_ui_clip">
+               <path
+                  transform="translate(-12.69 -45)" 
+                  style="fill:none"
+                  d="M13.5,45h160V339.14c.05,7.33-.15,10.78-3.54,14.89-5.06,6.12-10.19,6.56-17.32,6.36H33.54c-17,0-20.85-9.11-20.85-21.42S13.5,45,13.5,45Z"
+                  />
+            </clipPath>
+         </defs>
+      </svg>
+
+<!-- ----- Legal ----- -->
+
+      <div id="liveLegal_container">
+         <p id="legal">*Customer must provide online access for linked accounts</p>
+      </div>
+
+<!-- ----- Text 1----- -->
+
+      <div id="liveText1_container">
+         <p id="liveText1">
+            View your accounts in one place.*
+         </p>
+      </div>
+
+<!-- ----- Text 2 -----  -->
+
+      <div id="liveText2_container">
+         <div id="liveText2">
+            <p>Explore what's new in</p>
+            <p>the Citi Mobile</p> <span class="trademark">®</span> <p>App.</p>
+         </div>
+      </div>
+      <div id="sell" aria-hidden="true">Offer from Citi. A mobile device displays the balances of multiple Citi accounts. View your accounts in one place. Customer must provide online access for linked accounts. Explore what’s new in the Citi Mobile App. Learn more.</div>
+      <div class="bannerSize" id="logo"></div>
+      <div class="bannerSize" id="border"></div>
+      <a class="bannerSize" id="clickable" href="javascript:void(window.open(window.clickTag))" aria-labelledby="sell"></a>
+   </div>
+
+   <script>
+      window.addEventListener("DOMContentLoaded", pageFullyLoaded, false);
+      var divsTotal;
+      var divsLoaded = 0;
+      var childElements = document.getElementById("viewport").children;
+      console.log(childElements)
+      for (var i = 0; i < childElements.length; i++) {
+         childElements[i].style.opacity = 0;
+      }
+
+      function pageFullyLoaded(e) {
+         divsTotal = childElements.length;
+         for (i = 0; i < childElements.length; i++) {
+            childElements[i];
+            runPreloader(childElements[i].getAttribute("id"));
+         }
+      }
+
+      function runPreloader(myDiv) {
+         var imgLoadPls = imagesLoaded('#' + myDiv + '', { background: true }, function () {
+            // console.log('are the images loaded?', myDiv, imgLoadPls.images.length );
+            divsLoaded++;
+            // console.log("DIVS LOADED: ", divsLoaded, "DIVS TOTAL: ", divsTotal)
+            if (divsLoaded === divsTotal) {
+               console.log("WE HAVE LIFTOFF")
+               init();
+            }
+         });
+      }
+   </script>
+</body>
+
+</html>
